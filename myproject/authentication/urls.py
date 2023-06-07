@@ -4,7 +4,8 @@ from . import views
 app_name = 'authentication'
 
 urlpatterns = [
-    path('login/', views.login, name='login'),
     path('signup/', views.signup, name='signup'),
-    # Add more URLs as needed
+    path('login/', views.user_login_view, name='login'),
+    path('dashboard/', views.dashboard, name='dashboard'),  # Add this line
+    # Other URL patterns for authentication app
 ]
