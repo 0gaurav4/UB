@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Signup</title>
-    <!-- Add your CSS stylesheets and scripts here -->
-</head>
-<body>
-    <h1>Signup</h1>
-    <!-- Add signup form here -->
-</body>
-</html>
+<h2>Sign up</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Sign up</button>
+</form>

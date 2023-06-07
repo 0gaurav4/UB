@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+def career_counseling(request):
+    # Logic for career counseling
+    return render(request, 'career_counseling/counseling.html')

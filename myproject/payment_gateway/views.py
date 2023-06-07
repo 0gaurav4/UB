@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+def payment(request):
+    # Logic for payment gateway integration
+    return render(request, 'payment_gateway/payment.html')

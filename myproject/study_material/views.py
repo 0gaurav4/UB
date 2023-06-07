@@ -1,3 +1,8 @@
 from django.shortcuts import render
 
-# Create your views here.
+def study_material(request):
+    # Logic to retrieve study material data
+    context = {
+        # Provide data to the template
+    }
+    return render(request, 'study_material/study_material.html', context)

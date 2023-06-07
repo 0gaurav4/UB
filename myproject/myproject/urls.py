@@ -33,4 +33,6 @@ urlpatterns = [
     path('video_lectures/', include('video_lectures.urls')),
     path('notification/', include('notification.urls')),
     path('feedback_rating/', include('feedback_rating.urls')),
+    
+     path('', include('dashboard.urls')), 
 ]

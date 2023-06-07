@@ -1,3 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
+def feedback(request):
+    # Logic to handle feedback and rating
+    return render(request, 'feedback_rating/feedback.html')
